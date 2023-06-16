@@ -1,5 +1,8 @@
 {
   "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
     "eslint": "^8.42.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5"
@@ -29,6 +32,7 @@
     "color-name": "^1.1.4",
     "concat-map": "^0.0.1",
     "confusing-browser-globals": "^1.0.11",
+    "core-js": "^3.31.0",
     "cross-spawn": "^7.0.3",
     "debug": "^4.3.4",
     "deep-is": "^0.1.4",
@@ -162,8 +166,9 @@
     "yocto-queue": "^0.1.0"
   },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
